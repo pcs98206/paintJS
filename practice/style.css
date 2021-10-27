@@ -1,0 +1,70 @@
+@import "reset.css";
+
+body {
+  background-color: #f6f9fc;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+canvas {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.controls .controls_range input {
+  margin-bottom: 20px;
+}
+
+.controls .controls_buttons {
+  margin-bottom: 20px;
+}
+
+.controls_buttons button {
+  all: unset;
+  background-color: white;
+  cursor: pointer;
+  width: 45px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.controls_buttons button:active {
+  transform: scale(0.9);
+}
+
+.controls_buttons button:nth-child(2) {
+  margin: 0 5px;
+}
+
+.controls .controls_colors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.controls_colors .controls_color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
